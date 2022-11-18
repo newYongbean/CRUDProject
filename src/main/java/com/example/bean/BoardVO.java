@@ -1,9 +1,10 @@
-package com.example.vo;
+package com.example.bean;
 
 import java.util.Date;
-
+// variable object
 public class BoardVO {
 	private int seq;
+	private String category;
 	private String title;
 	private String writer;
 	private String content;
@@ -46,4 +47,8 @@ public class BoardVO {
 	public void setCnt(int cnt) {
 		this.cnt = cnt;
 	}
+
+	public String getCategory() { return category; }
+
+	public void setCategory(String category) { this.category = category; }
 }
